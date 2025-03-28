@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "langchain-tutorial"
+version = "0.1.1"
+description = "langchain-tutorial"
+authors = ["lotimuah <kwmg0754@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+addopts = "--show-capture=no"
